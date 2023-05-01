@@ -5,7 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 public class SignOutPageTest {
     WebDriver driver;
-    @Test( priority = 1 )
+    @Test
     public void verifySignOutTest() throws InterruptedException {
         driver = FactoryBrowser.setupBrowser("chrome", "https://www.ebay.com/signin/");
         SignOutPage signOutPageUpdate = PageFactory.initElements(driver, SignOutPage.class);
